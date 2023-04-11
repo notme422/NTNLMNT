@@ -13,9 +13,9 @@
         <h1 id="txt">you smell like you farded (farded)</h1>
         
         <script>
-            let rand = Math.random();
-            if (rand < 0.5) {
-                if (Math.random() > 0.5) {
+            let rand = getRandomInt(2);
+            if (rand == 0) {
+                if (getRandomInt(2) == 1) {
                    if (Math.random() > 0.5 {
                        document.getElementById("txt").innerHTML = "ok";
                    } else {
@@ -29,7 +29,7 @@
                    }
                 }
             }
-            if (rand > 0.5) {
+            if (rand == 1) {
                 if (Math.random() > 0.5) {
                     document.getElementById("txt").innerHTML = "cool";
                 } else {

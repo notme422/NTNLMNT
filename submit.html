@@ -13,12 +13,32 @@
         <h1 id="txt">you smell like you farded (farded)</h1>
         
         <script>
+            function getRandomInt(max) {
+                return Math.floor(Math.random() * max);
+            }
+            
             let rand = getRandomInt(2);
             if (rand == 0) {
-                document.getElementById("txt").innerHTML = "ok";
+                if (Math.random() > 0.5) {
+                    if (Math.random() > 0.5) {
+                        document.getElementById("txt").innerHTML = "ok";
+                    } else {
+                        document.getElementById("txt").innerHTML = "ok.";
+                    }
+                } else {
+                    if (Math.random() > 0.5) {
+                        document.getElementById("txt").innerHTML = "k";
+                    } else {
+                        document.getElementById("txt").innerHTML = "k.";
+                    }
+                }
             }
             if (rand == 1) {
-                document.getElementById("txt").innerHTML = "cool";
+                if (Math.random() > 0.5) {
+                        document.getElementById("txt").innerHTML = "cool";
+                    } else {
+                        document.getElementById("txt").innerHTML = "cool.";
+                }
             }
         </script>
     </body>
